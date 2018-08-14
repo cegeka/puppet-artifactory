@@ -14,6 +14,7 @@
 class artifactory::pro(
   String $license_key,
   Boolean $manage_java                                                    = true,
+  Boolean $manage_repo                                                    = true,
   String $yum_name                                                        = 'bintray-jfrog-artifactory-pro-rpms',
   String $yum_baseurl                                                     = 'http://jfrog.bintray.com/artifactory-pro-rpms',
   String $package_name                                                    = 'jfrog-artifactory-pro',
@@ -33,6 +34,7 @@ class artifactory::pro(
 
   class{'::artifactory':
     manage_java                    => $manage_java,
+    manage_repo                    => $manage_repo,
     yum_name                       => $yum_name,
     yum_baseurl                    => $yum_baseurl,
     package_name                   => $package_name,

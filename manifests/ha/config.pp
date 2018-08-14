@@ -58,7 +58,7 @@ class artifactory::ha::config {
         binary_provider_type           => $::artifactory::ha::binary_provider_type,
         pool_max_active                => $::artifactory::ha::pool_max_active,
         pool_max_idle                  => $::artifactory::ha::pool_max_idle,
-        binary_provider_cache_maxSize  => $::artifactory::ha::binary_provider_cache_maxSize,
+        binary_provider_cache_maxsize  => $::artifactory::ha::binary_provider_cache_maxsize,
         binary_provider_filesystem_dir => $::artifactory::ha::binary_provider_filesystem_dir,
         binary_provider_cache_dir      => $::artifactory::ha::binary_provider_cache_dir,
       }
