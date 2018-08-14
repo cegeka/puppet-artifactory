@@ -10,3 +10,5 @@
 # http://docs.puppetlabs.com/guides/tests_smoke.html
 #
 include ::artifactory
+include ::artifactory::pro
+include ::artifactory::ha
