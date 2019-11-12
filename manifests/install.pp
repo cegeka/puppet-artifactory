@@ -3,7 +3,7 @@
 # This class is called from artifactory for install.
 #
 
-Yum::Repo <| title == 'cegeka-custom-noarch' |>
+Cegeka_yum::Repo <| title == 'cegeka-custom-noarch' |>
 
 class artifactory::install {
   if ($::artifactory::manage_java) {
